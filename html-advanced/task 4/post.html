@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Task 4: Post </title>
+</head>
+
+<body>
+    <h1> The Form </h1>
+    <form action="http://httpbin.org/post" method="post">
+        <fieldset>
+            <legend> Personal data </legend>
+            <table>
+                <tr>
+                    <td> First Name: </td>
+                    <td> <input type="text" name="First Name">
+                        <td>
+                </tr>
+                <tr>
+                    <td>
+                        Middle name: </td>
+                    <td>
+                        <input type="text" name="Middle name"> </td>
+                </tr>
+                <tr>
+                    <td> Surname: </td>
+                    <td> <input type="text" name="Surname"> </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Sex: </td>
+                    <td> Male
+                        <input type="radio" name="Sex" value="male"> </td>
+                </tr>
+                <tr>
+                    <td> Female
+                        <input type="radio" name="Sex" value="female"> </td>
+                </tr>
+                <tr>
+                    <td> Age: </td>
+                    <td>
+                        <input type="number" min="18" max="101" name="Age"> </td>
+                </tr>
+                <tr>
+                    <td> Country of Residence: </td>
+                    <td>
+                        <input list="country" name="country">
+                        <datalist id="country">
+                            <option>Russian Federation </option>
+                            <option>Serbia </option>
+                            <option>Ukrain </option>
+                            <option>Belarus </option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td> City:
+                        <td>
+                            <input type="radio" name="city" value="Ryazan"> Ryazan
+                            <input type="radio" name="city" value="Moscow"> Moscow
+                            <td>
+                </tr>
+                <tr>
+                    <td> Photography: </td>
+                    <td>
+                        <input type="file" name="Photography"> </td>
+                </tr>
+            </table>
+            <hr>
+            <table>
+                <tr>
+                    <td> Title: </td>
+                    <td>
+                        <select size="8" name="Title">
+                     <optgroup label="Techologies">
+                      <option value="Web Master">Web Master</option>
+                      <option value="Database Administrator">Database Administrator</option>
+                      <option value="Computer-aided design">Computer-aided design</option>
+                     </optgroup>
+                     <optgroup label="Finance">
+                      <option value="Economic Planning">Economic Planning</option>
+                      <option value="Management accounting">Management accounting</option>
+                      <option value="Budget and planning">Budget and planning</option>
+                     </optgroup>
+                 </select> </td>
+                    <tr>
+                        <td> Salary: </td>
+                        <td> <input type="range" name="Salary"> </td>
+            </table>
+            <textarea placeholder="Tell us about yourself..." cols="40" rows="15" name="About yourselft"> </textarea> <br>
+
+
+        </fieldset>
+        <fieldset>
+            <legend> Contact information </legend>
+            <table>
+                <tr>
+                    <td> Site: </td>
+                    <td> <input type="text"  name="Site"> </td>
+                </tr>
+                <tr>
+                    <td> Email: </td>
+                    <td> <input type="email" name="Email"> </td>
+                </tr>
+                <td> Phone: </td>
+                <td> <input type="tel" name="Phone"> </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br> Password:
+        <input type="password" name="Password" required> <br>
+        <button type="submit"> Отправить </button>
+        <button type="reset"> Сбросить</button>
+    </form>
+</body>
+
+</html>
