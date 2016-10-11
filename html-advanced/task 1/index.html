@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!DOCTYPE html/>
 <html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title> Task 1 </title>
 </head>
 
 <body>
-    <h1> Task 1 </h1> <br>
+    <h1> Task 1 </h1> <br/>
     <ul>
         <li>
             <a href="https://www.google.ru/">Searching </a>
@@ -28,7 +28,7 @@
             <a href="https://mail.google.com/">Mail </a>
         </li>
     </ul>
-    <br>
+    <br/>
     <ol type="1" start="7">
         <li>
             Searching
@@ -50,7 +50,7 @@
         </li>
         <li>
             Yet
-            <br>
+            <br/>
             <ul type="circle">
                 <li>
                     Flights
@@ -75,7 +75,7 @@
         <dd>This direction of development of the World Wide Web, the aim of which is to provide information in a form suitable
             or machine processing </dd>
     </dl>
-    <hr>
+    <hr/>
     <p align="center"> Css Generated content for pseudo-elements </p>
     <table border="1" width="100%">
         <tr>
@@ -143,24 +143,33 @@
     <form>
         <fieldset>
             <legend> Personal data </legend>
-            Surname:
-            <input type="text" name="Surname"> <br> First Name:
-            <input type="text" name="First Name"> <br> Middle name:
-            <input type="text" name="Middle name"> <br> You are: Male
-            <input type="radio" name="Sex" value="male"> Female
-            <input type="radio" name="Sex" value="female"> <br> Age:
-            <input type="number" min="18" max="101" name="Age"> <br> Country of Residence:
-            <input list="country">
+            <label> Surname:
+            <input type="text" id="surname" name="Surname"/> </label> <br/>
+            <label> First Name: 
+            <input type="text" name="First Name"/> </label> <br/>
+            <label>Middle name:
+            <input type="text" name="Middle name"/> </label> <br/>
+            <label> You are: Male
+            <input type="radio" name="Sex" value="male"/> Female
+            <input type="radio" name="Sex" value="female"/> </label> <br/>
+            <label> Age:
+            <input type="number" min="18" max="101" name="Age"/> </label> <br/>
+            <label> Country of Residence:
+            <input list="country"/>
             <datalist id="country">
                 <option>Russian Federation </option>
                 <option>Serbia </option>
                 <option>Ukrain </option>
                 <option>Belarus </option>
-            </datalist> <br> City:
-            <input type="radio" name="city" value="Ryazan">
-            <input type="radio" name="city" value="Moscow"> <br> Photography:
-            <input type="file" name="Photography">
-            <hr> Title:
+            </datalist> </label> <br/>
+            <label> City:
+            <input type="radio" name="city" value="Ryazan"/> Ryazan </label>
+            <label>
+            <input type="radio" name="city" value="Moscow"/> </label> <br/>
+            <label> Photography:
+            <input type="file" name="Photography"/> </label>
+            <hr/>
+            <label> Title:
             <select>
                      <optgroup label="Techologies">
                       <option value="Web Master">Web Master</option>
@@ -172,21 +181,24 @@
                       <option value="Management accounting">Management accounting</option>
                       <option value="Budget and planning">Budget and planning</option>
                      </optgroup>
-                 </select> <br> Salary:
-            <input type="range" name="Salary"> <br>
-            <textarea placeholder="Tell us about yourself..." cols="40" rows="15"> </textarea> <br>
+                 </select> </label> <br/>
+            <label> Salary:
+            <input type="range" name="Salary"/> </label> <br/>
+            <textarea cols="40" rows="15" placeholder="Describe yourself here..."></textarea> <br/>
         </fieldset>
     </form>
     <form>
         <fieldset>
             <legend> Contact information </legend>
-            Site:
-            <input type="text"> <br> Email:
-            <input type="email"> <br> Phone:
-            <input type="tel"> <br>
+            <label> Site:
+            <input type="text"/> </label> <br/>
+            <label> Email:
+            <input type="email"/> </label> <br/>
+            <label> Phone:
+            <input type="tel"/> </label> <br/>
         </fieldset>
-        <br> Password:
-        <input type="password" required> <br>
+        <br/> <label> Password:
+        <input type="password" required/> </label> <br/>
         <button type="submit"> Отправить </button>
         <button type="reset"> Сбросить</button>
     </form>
