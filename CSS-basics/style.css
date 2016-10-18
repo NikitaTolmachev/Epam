@@ -41,3 +41,53 @@ background-color: rgba(255, 203, 2, 0.8);
 .alpha {
     color: rgba(0, 0, 0, 0.3);
 }
+#table {
+    position: relative;
+width: 98%;
+height:300px;
+top: 315px;
+left: 0;
+right: 0;
+margin: auto;
+padding: 7px;
+border: solid black;
+border-radius: 20px;
+background-color: rgba(255, 203, 2, 0.8);
+}
+table {
+    direction: rtl;
+    line-height: 25px;
+
+}
+#justify {
+text-align: justify;
+}
+#decoration1{
+text-decoration: underline;
+vertical-align: sub;
+}
+#decoration2{
+text-decoration: overline;
+vertical-align: super;
+}
+#transform1{
+text-transform: uppercase;
+vertical-align: top;
+}
+#transform2{
+text-transform:  lowercase;
+}
+#transform3{
+text-transform: capitalize;
+}
+#shadow{
+ text-shadow: 1px 1px 2px black, 0 0 1em grey; 
+    color: white; 
+    font-size: 2em; 
+   }        
+#nowrap{
+    white-space: nowrap;
+}
+#wordspacing{
+    word-spacing: 50px;
+}
