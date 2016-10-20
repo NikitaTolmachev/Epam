@@ -1,0 +1,56 @@
+#image {
+    position: relative;
+    border: solid 2px gray;
+    width: 200px;
+    height: 150px;
+    padding: 0px;
+}
+#circle {
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color:rgb(0,188,158);
+    position: relative;
+    margin: 25px 50px;
+}
+#button {
+    width: 100px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 0.7em 0.7em;
+    background-color: rgb(92, 97, 229);
+    position: relative;
+    top: 20px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    background: linear-gradient( rgb(189, 190, 244), rgb(92, 97, 229), rgb(189, 190, 244));
+
+            transition: box-shadow 0.5s;
+}
+#button:after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -21px;
+    bottom: 0;
+    left: -3px;
+    right: 0;
+    border-radius: 0.7em 0.7em;
+    border: 2px solid rgb(159, 162, 240);
+    width: 102px;
+    height: 32px;
+   
+}
+span {
+    position: relative;
+    top: 6px;
+}
+#button:hover {
+  box-shadow: -6px 6px 8px -4px rgba(0,0,255,0.75),
+            6px -6px 8px -4px rgba(0,0,255,0.75),
+             -6px -6px 8px -4px rgba(0,0,255,0.75),
+            6px 6px 8px -4px rgba(0,0,255,0.75);
+            
+}

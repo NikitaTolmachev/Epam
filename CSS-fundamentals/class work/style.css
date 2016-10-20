@@ -1,0 +1,176 @@
+#maindiv{
+   width: 315px;
+   height: 240px;
+   top:40px;
+   left: 70px;
+   border: solid black 2px;
+
+
+
+}
+#text1{
+    position: relative;
+    text-align: left;
+    background-color: cadetblue;
+    width: 300px;
+    height: 70px;
+    margin: 5px 0px 0px 5px;
+    padding: 0px 0px 0px 3px;
+    color: white;
+    font-size: 32px;
+    text-align: left;
+    font-weight: bold;
+
+}
+#text2{
+ text-align: left;
+ width: 300px;
+ height: 100px;
+ margin: 5px;
+ padding: 0px 0px 0px 3px;
+ background-color: lightgray;
+}
+i {
+    color:red;
+}
+a {
+    color: blue;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+#links {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    display: inline;
+}
+.linked:after {
+     display: block;
+    transition:width 1s ease-in-out;
+    background-color: blue;
+    width: 0px;
+    height: 3px;
+    opacity: 1;
+    visibility: visible;
+    content: "";
+}
+.linked:hover:after {
+    width: 37px;
+    opacity: 1;
+}
+#android {
+    position: relative; 
+    border: 1px solid black;
+    left: 50px;
+    width: 150px;
+    height: 170px;
+    box-shadow: inset 0 0 10px #000000 ;
+}
+#head {
+    position: inherit;
+    left: -40px;
+margin: 10px 50%;
+border: 1px solid rgb(153, 204, 00);
+background-color: rgb(153, 204, 00);
+width: 80px;
+height: 30px;
+border-radius: 50px 50px 0em 0em;
+}
+#left_eye {
+    position: relative;
+    top: 10px;
+    left: 17px;
+    width: 7px;
+    height: 7px;
+background-color: white;
+border: 1px solid white;
+border-radius: 3em;
+}
+#right_eye{
+     position: relative;
+    top: 1px;
+    left: 52px;
+    width: 7px;
+    height: 7px;
+background-color: white;
+border: 1px solid white;
+border-radius: 3em;
+}
+
+#mustache1 {
+position: relative;
+top: -30px;
+left: 55px;
+width: 2px;
+height: 20px;
+border: 1px solid rgb(153, 204, 00);
+background-color: rgb(153, 204, 00);
+transform: rotate(45deg);
+}
+#mustache2 {
+position: relative;
+top: -52px;
+left: 22px;
+width: 2px;
+height: 20px;
+border: 1px solid rgb(153, 204, 00);
+background-color: rgb(153, 204, 00);
+transform: rotate(315deg);
+}
+#body {
+    position: inherit;
+top: -5px;
+left: -40px;
+margin: 10px 50%;
+border: 1px solid rgb(153, 204, 00);
+background-color: rgb(153, 204, 00);
+width: 80px;
+height: 80px;
+border-radius: 0em 0em 1em 1em;
+}
+
+
+
+#left_leg {
+    position: relative;
+    top: -148px;
+    left: -28px;
+margin: 10px 50%;
+border: 1px solid rgb(153, 204, 00);
+background-color: rgb(153, 204, 00);
+width: 15px;
+height: 40px;
+border-radius: 5em 5em 5em 5em;
+}
+#right_leg{ 
+    top: -200px;
+    position: relative;
+margin: 10px 50%;
+border: 1px solid rgb(153, 204, 00);
+background-color: rgb(153, 204, 00);
+width: 15px;
+height: 40px;
+left: 15px;
+border-radius: 5em 5em 5em 5em;
+}
+#left_hand {
+    position: relative;
+    top: -83px;
+margin: 10px 50%;
+border: 1px solid rgb(153, 204, 00);
+background-color: rgb(153, 204, 00);
+width: 12px;
+height: 50px;
+left: -61px;
+border-radius: 5em 5em 5em 5em;}
+#right_hand {top: -145px;
+    position: relative;
+margin: 10px 50%;
+border: 1px solid rgb(153, 204, 00);
+background-color: rgb(153, 204, 00);
+width: 12px;
+height: 50px;
+left: 50px;
+border-radius: 5em 5em 5em 5em;}
