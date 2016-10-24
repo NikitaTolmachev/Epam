@@ -1,0 +1,27 @@
+.caption {
+    position: relative;
+    margin: 7%;
+    width: 500px;
+    height: 100px;
+    background-color: rgb(166, 139, 221) ;
+    border: none;
+    font-size: 90%;
+    color:rgb(145, 101, 207) ;
+    padding: 7px;
+    text-align: left;
+    box-shadow: 0 0 5px rgba(0,100,0,0.5); 
+} 
+.caption::after {
+    position: relative;
+    top: -59%;
+    left: -44.4%;
+    width: 60px;
+    height: 10px;
+    border:none;
+    background-color: rgb(166, 139, 221);
+    border-radius: 0.2em 0.2em 0 0;
+    padding: 3px;
+    content: "Caption"; 
+    box-shadow: 0 0 5px rgba(0,100,0,0.5), inset 0 -5px 5px -5px #333, inset 0 5px 5px -5px #333;
+}
+

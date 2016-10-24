@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    font-size: 90%;
+}
+.thumbnail {
+  float: left;
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  color: white;
+  cursor: pointer;
+  background-image: url(3.jpg);
+  border: 6px solid transparent;
+  outline: 2px solid gray;
+}
+.button {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    left:-5px;
+    padding-left: 0px;
+    margin-right: 2px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.button::nth-child(2n+1){
+    margin-right:15px;
+}
+.clearboth {
+  clear: both;
+}
+
+.thumbnail-inline{
+    display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  color: white;
+  cursor: pointer;
+  background-image: url(2.png);
+  border: 6px solid transparent;
+  outline: 2px solid gray;  
+}
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 320px;
+}
+.thumbnail-flex{
+
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  color: white;
+  cursor: pointer;
+  background: url(3.png) no-repeat;
+  padding-top: 0px;
+  padding-left: 0px; 
+  /*border: 6px solid transparent;*/
+  outline: 2px solid gray;
+}
+.flex-box > .button {
+    left: -5px;
+    margin-right: 5px;
+}
