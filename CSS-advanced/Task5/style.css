@@ -8,8 +8,8 @@
 #main {
     display: inline-block;
     position: relative;
-    width:1299px;
-    height: 65px;
+    width: 96.2%;
+    height: 45px;
     background-image: url(background.jpg);
 }
 #msg{
@@ -17,7 +17,7 @@
     padding: 2px 2px;
     left: 0;
     width:65px;
-    height: 65px;
+    height: 45px;
     background: url(mail.png)  20% 50% no-repeat;
     background-color: rgba(98, 75, 161, 0.7);
 }
@@ -29,7 +29,7 @@
     padding: 4px 0px 0px 0px;
     position: relative;
     left: 25px ;
-    top: 22px ;
+    top: 12px ;
     width: 18px;
     height: 18px;
     background: red;
@@ -39,11 +39,11 @@
 #page{
     display: inline-block;
     position: inherit;
-    top: -65px;
+    top: -45px;
     padding: 2px 2px;
     left: 69px;
     width:65px;
-    height: 65px;
+    height: 45px;
     background: url(page.png)  20% 50% no-repeat;
     background-color: rgba(98, 75, 161, 0.7);
 }
@@ -55,7 +55,7 @@
     position: relative;
     padding: 4px 0px 0px 0px;
     left: 25px ;
-    top: 22px ;
+    top: 12px ;
     width: 36px;
     height: 18px;
     background: red;
@@ -66,10 +66,10 @@
 #user{
     position: inherit;
     padding: 2px 2px;
-    top: -130px;
+    top: -90px;
     left: 138px;
     width:65px;
-    height: 65px;
+    height: 45px;
     background: url(user.png)  20% 50% no-repeat;
     background-color: rgba(98, 75, 161, 0.7);
 }
@@ -81,7 +81,7 @@
     position: relative;
     padding: 4px 0px 0px 0px;
     left: 25px ;
-    top: 22px ;
+    top: 12px ;
     width: 18px;
     height: 18px;
     background: red;
@@ -91,40 +91,40 @@
 #flag{
      position: inherit;
     padding: 2px 2px;
-    top: -195px;
+    top: -135px;
     left: 208px;
-    width:65px;
-    height: 65px;
-    background: url(flag.png)  20% 50% no-repeat;
+    width:45px;
+    height: 45px;
+    background: url(flag.png)  50% 50% no-repeat;
     background-color: rgba(98, 75, 161, 0.7);
 }
 #checked {
        position: inherit;
     padding: 2px 2px;
-    top: -260px;
-    left: 277px;
-    width:65px;
-    height: 65px;
-    background: url(checked.png)  20% 50% no-repeat;
+    top: -180px;
+    left: 257px;
+    width:45px;
+    height: 45px;
+    background: url(checked.png)  50% 50% no-repeat;
     background-color: rgba(98, 75, 161, 0.7);
 }
 #refresh {
        position: inherit;
     padding: 2px 2px;
-    top: -325px;
+    top: -225px;
     left: 1019px;
     width:65px;
-    height: 65px;
+    height: 45px;
     background: url(refresh.png)  50% 50% no-repeat;
     background-color: rgba(98, 75, 161, 0.7);
 }
 #widget {
 position: inherit;
     padding: 2px 2px;
-    top: -390px;
+    top: -270px;
     left: 1089px;
     width:65px;
-    height: 65px;
+    height: 45px;
     background: url(widget.png)  50% 50% no-repeat;
     background-color: rgba(98, 75, 161, 0.7);
 }
@@ -133,24 +133,25 @@ position: inherit;
 #exit {
        position: inherit;
     padding: 2px 2px;
-    top: -455px;
+    top: -315px;
     left: 1234px;
     width:65px;
-    height: 65px;
+    height: 45px;
     background: url(exit.png)  50% 50% no-repeat;
     background-color: black;
 }
 #exit2{
           position: inherit;
     padding: 2px 2px;
-    top: -520px;
+    top: -360px;
     left: 1159px;
     width:75px;
-    height: 65px;
+    height: 45px;
     color: white;
     background-color: black;
     font-size: 115%;
     text-align: center;
-    padding: 23px 0px 0px 8px;
+    padding-top: 15px;
+    padding-left: 8px;
     content: "Выход";
 }

@@ -19,7 +19,7 @@ label {
     border-radius: 0 0 5px 5px;
     cursor: pointer;
     outline: none;
-    transition: all 1.5s ease-in-out;
+    transition: box-shadow 1.5s ease-in-out,top 1.5s ease-in-out;
     color: white;    
 }
 input[type=checkbox] {
@@ -35,7 +35,7 @@ input[type=checkbox] {
 .dropdown ul {
     position: absolute;
     left: 43.85%;
-    top: -108px;
+    top: -100px;
     width: 100px;
     background: rgb(53, 186, 246);
     border: 1px solid rgba(0,0,0,0.2);
@@ -51,9 +51,9 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:checked ~ .dropdown:not(ul){
-    top: 22%;}
+    top: 87px;}
     input[type=checkbox]:checked ~ .dropdown + ul{
-    top: -4%;}
+    top: -2.5%;}
 
 label:hover {
         box-shadow: 0 2.5px 10px 3px rgba(53,186,246,0.6);
