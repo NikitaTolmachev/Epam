@@ -557,7 +557,7 @@ textarea:active {
     font-size: 110%;
     color: rgb(72, 75, 82);
 }
-#problem_name.book_name {
+#problem_name.content_book_name {
     position: relative;
     top: 2.5%;
     width: 100%;
