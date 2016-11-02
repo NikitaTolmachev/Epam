@@ -4,12 +4,19 @@ function name() {
 }
 name();
 
-function factorial(result) {
+function factorial(num) {
     var result = 1;
-    n = prompt("We need a number!");
-    for (i = 1; i <= n; i++) {
-        result = result * i;
+    
+    if (!isNaN(num) && isFinite(num)) {
+        for (i = 1; i <= num; i++) {
+            result = result * i;
+        }
+    } else {
+        throw new Error("Its not a number, and you know that...");
     }
-    alert(result);
+
+    return result;
 }
-factorial();
+
+var n = prompt("We need a number!");
+alert(factorial(n));
