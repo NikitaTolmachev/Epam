@@ -17,6 +17,7 @@ function sort(string1) {
         if (!swapped)
             break;
     }
+    
     console.log(array.join(' '));
 }
 var string1 = prompt('Enter string');
