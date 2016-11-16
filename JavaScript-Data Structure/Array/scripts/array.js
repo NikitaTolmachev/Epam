@@ -1,28 +1,21 @@
 //Array: Task 1
 function isArray(arr) {
-    var arr;
-    if (arr instanceof Array) {
-        return true;
-    } else {
-        return false;
-    }
+    return arr instanceof Array; 
 }
 console.log(isArray([2, 4, 5, 6])); // true
 console.log(isArray(2)); // false
 
-//Array: Task 2 !undefined problem
+//Array: Task 2 
 function removeUndeNaN(arr) {
     if (isArray(arr)) {
         for (i = 0; i <= arr.length; i++) {
-            if (arr[i] == "null" || arr[i] == '0' || arr[i] == "''" || arr[i] == 'false' || typeof arr[i] == "undefined" || isNaN(arr[i]) == true) {
+            if (arr) {
                 arr.splice(i, 1);
             }
         }
-
     } else {
-        console.log('not Array');
+        throw new Error('not Array');
     }
-
 }
 
 // var arr = ['null','12','0','','false',"undefined",NaN,'015','10'];
@@ -39,9 +32,8 @@ function highestValue(arr) {
             }
         }
         return max;
-    }
-    else {
-        console.log('not array');
+    } else {
+        throw new Error('not array');
     }
 }
 var arr = [5, 15, -40, 1030, 1050, 550, 200, 140];
@@ -56,9 +48,8 @@ function minValue(arr) {
             }
         }
         return min;
-    }
-    else {
-        console.log('not array');
+    } else {
+        throw new Error('not array');
     }
 }
 var arr = [5, 15, -40, 1030, -199, 550, -400, 140];
@@ -80,23 +71,25 @@ function freqItem(arr) {
     var max = 0;
     var element = 0;
     var index = 0;
+
     for (i = 0; i < 8; i++) {
         element = arr[0][i];
         count = 0;
+       
         for (j = 0; j < 8; j++) {
             if (element == arr[0][j])
                 count++;
         }
         arr[1][i] = count;
     }
+   
     for (j = 0; j < 8; j++) {
         if (max < arr[1][j]) {
             max = arr[1][j];
             index = j;
         }
-
-
     }
+
     return arr[0][index];
 }
 var arr = new Array(['1', '2', '3', '4', '3', '5', '6', '3'], [0, 0, 0, 0, 0, 0, 0, 0])
@@ -113,19 +106,19 @@ console.log(clone(arr));
 //Array: Task 8; !ignore case sensitivity
 
 function removeDuplications(str) {
-
     var array = str.split(' ');
     var buffer;
+
     for (i = 0; i < array.length; i++) {
         buffer = array[i];
+
         for (j = i; j < array.length; j++) {
             if (buffer == array[j + 1]) {
                 array.splice(j + 1, 1);
             }
-
-
         }
     }
+
     return array;
 }
 var str = "Test Test test Java Script java Script Test go!";
@@ -138,6 +131,7 @@ function mergeAr(arr1, arr2) {
     var merged = arr1.concat(arr2);
     var str = merged.join(' ');
     var merged = removeDuplications(str);
+
     return merged;
 }
 var arr1 = ['js', 'ECHMA', 'js', 'ECHMA', '12', '31'];
@@ -149,6 +143,7 @@ function removeSpec(arr) {
     var str = arr.join(' ');
     str = (str.replace(/[%#-@!_]/g, ""))
     arr = str.split(' ');
+    
     return arr;
 }
 var arr = ['Java', 'Script', 'is', '*$#!_!', 'Awesome'];

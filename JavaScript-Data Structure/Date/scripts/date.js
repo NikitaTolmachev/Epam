@@ -1,13 +1,13 @@
 function dateDiff() {
     var date1 = new Date(2015, 03, 15, 0000, 0000, 0000);
     var date2 = new Date(2016, 10, 14, 0000, 0000, 0000);
+  
     return ((date1 - date2) / (1000 * 60 * 60 * 24))
 }
 console.log(dateDiff());
 
 function nowDate() {
-    var now = new Date;
-    return now;
+    return new Date();
 }
 console.log(nowDate());
 
@@ -19,8 +19,8 @@ function formatDate() {
         year: 'numeric',
         hour: 'numeric',
         minute: 'numeric'
-
-    }
+    };
+   
     return date.toLocaleString("en-US", options);
 }
 console.log(formatDate());
