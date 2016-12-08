@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Layout </title>
+</head>
+
+<body>
+	<!--Header menu-->
+	<header>
+		<div id="header">
+			<div id="help_center">Help Center</div>
+			<div id="dot"></div>
+			<div id="our_support">Our Support </div>
+			<div id="profile">John Doe</div>
+		</div>
+	</header>
+	<!--Left_side>-->
+	<div id="conteiner" class="left_side_menu">
+		<!--Button "Add a book"-->
+		<div id="with_button">
+			<div id="add_a_book">ADD A BOOK</div>
+		</div>
+		<div id="form_for_input_book_data"> 
+			<form id="get_new_book_data">
+				<input id="bookName" name="bookName" class="getData" type="name" placeholder="Название книги"> <label for="bookName" class="GetData_label"> Название </label> </input>
+				<input id="authorName" name="authorName" class="getData" type="name" placeholder="Имя автора"> <label for="authorName" class="GetData_label"> Автор </label> </input>
+				<input id="image" name="image" type="file" class="getData" multiple="false" accept="image/jpeg,image/<png></png>"> <label for="image" class="GetData_label"> Обложка </label> </input>
+				<input id="rank" name="rank" class="getData" type="number" 	min="1" max="5" step="1" value="1"> <label for="rank" class="GetData_label"> Рейтинг </label> </input>
+
+			</form>
+		</div>
+		<!--Sidebar 1-->
+		<div id="side_bar">
+			<div id="now_reading">Now Reading</div>
+			<div id="browse">Browse</div>
+			<div id="buy_books">Buy Books </div>
+			<div id="favourite_books">Favourite Books </div>
+			<div id="wishlist">Wishlist </div>
+			<div id="history">History </div>
+		</div>
+		<!--Sidebar 2-->
+		<div id="Side_bar_2">
+			<div id="must_read_titles">Must Read Titles </div>
+			<div id="best_of_list"> Best Of List </div>
+			<div id="classic_novels"> Classic Novels </div>
+			<div id="non_fiction"> Non Fiction </div>
+		</div>
+		<!--Info-->
+		<div id="info">
+		<ul id="infoUl" class="infoUl"> 
+			</ul>
+			
+		 </div>
+		
+	</div>
+	<!--content-->
+	<!--content-header-->
+	<div id="content_container">
+		<div id="content_header">Browse Available Books </div>
+		<div id="content_menu">
+			<!--content-menu-->
+			<input type="radio" id="menu1" name="radio" checked="checked" />
+			<label for="menu1" class="tabs" id="all_books">All Books</label>
+			<input type="radio" id="menu2" name="radio" />
+			<label for="menu2" id="most_recent">Most Recent</label>
+			<input type="radio" id="menu3" name="radio" />
+			<label for="menu3" id="most_popular">Most Popular</label>
+			<input type="radio" id="menu4" name="radio" />
+			<label for="menu4" id="free_books">Free Books </label>
+			<div id="search"><textarea id="search_textarea" placeholder="Enter Keywords"></textarea> </div>
+		</div>
+		<!--content-->
+	
+		<div id="content_box">
+				<ul id="contentBoxFlexUl" class="contentBoxFlexUl"> 
+			</ul>
+		</div>
+		
+	</div>
+	<!--footer-->
+	<footer>
+		<div id="footer">
+			<div id="question"> </div>
+			<div id="param"> </div>
+		</div>
+	</footer>
+	<link rel="stylesheet" href="styles/style.css">
+	<script src="scripts/model/book.model.js"></script>
+	<script src="scripts/storage/books.storage.js"></script>
+	<script src="scripts/utilites/utilites.js"></script>
+	<script src="scripts/view/books.view.js"></script>
+	<script src="scripts/controller/book.controller.js"></script>
+	<script src="scripts/books.main.js"></script>	
+	
+</body>
+
+</html>
