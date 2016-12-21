@@ -1,0 +1,43 @@
+form {
+    display: inline-block;
+}
+.form-group {
+    text-align: center;
+    padding-bottom: 25px;
+}
+#todo {
+    margin: 0 auto;
+    width: 500px;
+}
+
+a.close {
+  float: right;
+}
+
+.ls {
+    text-decoration: line-through;
+}
+
+.nls{
+    text-decoration: none;
+}
+li{
+    cursor: pointer;
+}
+
+#button {
+    width: 50px ;
+    height: 30px ;
+    margin-bottom: 10px;
+}
+
+
+#myInput{
+    height: 30px;
+}
+
+#checkBoxLabel{
+    position: relative;
+display: inline-block;
+margin-top: 3px;
+}
